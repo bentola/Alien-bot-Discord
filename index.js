@@ -11,13 +11,6 @@ const youtube = new google.youtube_v3.Youtube({
 
 const client = new Discord.Client();
 
-youtube.search.list({
-    q: 'eminen',
-    part: 'snippet',
-    fields: 'items(id(videoId),snippet(title))',
-    type: 'video'
-})
-
 const prefixo = configs.PREFIX;
 
 const servidores = {
